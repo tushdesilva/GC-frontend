@@ -1,0 +1,220 @@
+[v-cloak] {
+  display: none;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: @backgorundColor;
+  font-family: @main-font;
+  color: @text-normal;
+}
+
+/* HEADER TAGS */
+
+h1 {
+  font-size: @h1Size;
+  font-weight: @bold;
+}
+
+h2 {
+  font-size: @h2Size;
+  font-weight: @bold;
+
+}
+
+h3 {
+  font-size: @h3Size;
+}
+
+h4 {
+  font-size: @h4Size;
+}
+
+h5 {
+  font-size: @h5Size;
+}
+
+h6 {
+  font-size: @h6Size;
+}
+
+// PARA
+p {
+  font-size: @normalsize;
+}
+
+// PARA FOR TAG LINE
+.tagline {
+  font-size: @taglinesize;
+}
+
+// TAGS
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: inherit;
+}
+
+// LINKS
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a :hover {
+  color: @linkhover;
+}
+
+a :active {
+  color: @linkhover;
+}
+
+section {
+  background-image: linear-gradient(to bottom right, @topgradiant, @bottomgradiant);
+}
+
+hr {
+  background-color :#707070;
+}
+
+.btn-loyalty{
+  border-top: none;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  background: @brand;
+  color:@text-normal;
+  font-weight: @bold;
+}
+
+.sublinks{
+  font-size: @footerSubHeading;
+}
+#page-footer{
+
+  font-size: @footerText;
+}
+#page-wrap {
+  height: 100%;
+  /* lesshint-disable */
+  height: auto !important;
+  /* lesshint-enable */
+  // ^^The above is to disable "importantRule" and "duplicateProperty" rules.
+  min-height: 100%;
+  position: relative;
+
+  header {
+
+    // .logo {
+    //   height: 20px;
+    // }
+
+    // a {
+    //   cursor: pointer;
+    // }
+
+    // .dropdown-menu.account-menu {
+    //   left: auto;
+    //   right: 0px;
+    // }
+  }
+
+}
+
+#page-footer {
+  // border-top: 1px solid rgba(0, 0, 0, 0.1);
+  // height: @footer-height;
+  // width: 100%;
+  // position: absolute;
+  // left: 0px;
+  // bottom: 0px;
+  // padding-top: 75px;
+
+
+  // span {
+  //   font-size: small;
+  // }
+
+  // large {
+  //   font-size: larger;
+  // }
+
+
+  // .xs-only {
+  //   display: none;
+  // }
+}
+
+body.detected-mobile {
+  // Above and beyond the media queries below, this selector (which relies on
+  // `parasails` automatically attaching this class, if appropriate) contains
+  // styles intended to be activated specifically when loaded from a recognized
+  // mobile device, regardless of viewport dimensions.  This includes tablet
+  // devices (like the iPad) as well as handset devices (like the iPhone).
+  // …
+}
+
+
+
+
+
+// TAB
+@media (max-width: 800px) {
+
+  // #page-wrap {
+  //   padding-bottom: 75px;
+
+  //   #page-footer {
+  //     height: 75px;
+
+  //     .copy,
+  //     .nav {
+  //       width: 100%;
+  //       display: block;
+  //       text-align: center;
+
+  //       .nav-item {
+  //         display: inline-block;
+
+  //         a {
+  //           display: inline-block;
+  //         }
+  //       }
+  //     }
+  //   }
+  // }
+
+ 
+
+
+}
+
+// MOBILE
+@media (max-width: 450px) {
+
+  // #page-wrap {
+  //   padding-bottom: 85px;
+
+  //   #page-footer {
+  //     height: 85px;
+
+  //     .xs-only {
+  //       display: block;
+  //     }
+  //   }
+  // }
+
+  // .category-card,
+  // .merchant-card {
+  //   .card-img-overlay {
+  //     font-size: 7rem;
+  //   }
+  // }
+
+}

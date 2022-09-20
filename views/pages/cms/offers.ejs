@@ -1,0 +1,65 @@
+<div id="offers" v-cloak>
+
+  <section id="hotels">
+    <div class="container-fluid">
+      <div>
+        <h2 class="py-5 px-5 mx-md-5">{{category.category_name}}</h2>
+       
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col ">
+          <form>
+
+
+            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Choose the Pickup Location</label>
+                 <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+     <option selected>Street Address</option>
+     <option value="1">Colombo-01</option>
+     <option value="2">Colombo-02</option>
+     <option value="3">Colombo-03</option>
+     <option value="3">Colombo-04</option>
+     <option value="3">Colombo-05</option>
+     <option value="3">Colombo-06</option>
+  
+                  </select>
+                 
+  
+            <label class="my-1 mr-2" for="inlineFormCustomSelectPref">Choose the Destination Location</label>
+                 <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+     <option selected>City</option>
+     <option value="3">Colombo-01</option>
+     <option value="3">Colombo-02</option>
+     <option value="3">Colombo-03</option>
+     <option value="3">Colombo-04</option>
+     <option value="3">Colombo-05</option>
+     <option value="3">Colombo-06</option>
+                </select>
+   <div class="custom-control custom-checkbox my-1 mr-sm-2">
+     <input type="checkbox" class="custom-control-input" id="customControlInline">
+     <label class="custom-control-label" for="customControlInline">Remember my preference</label>
+   </div>
+  
+   <button type="submit" class="btn btn-primary my-1">Submit</button>
+  </form>
+
+
+
+
+
+        </div>
+      
+        <div class="d-flex justify-content-center my-5">
+          <button type="button" class="btnone btn-link" @click="getMoreOffers" v-if="offers.length < totalCount">Load More</button>
+    </div>
+       
+        
+      </div>
+    </div>
+    
+  </section>
+  
+</div>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+
+<%- /* Expose server-rendered data as window.SAILS_LOCALS :: */ exposeLocalsToBrowser() %>

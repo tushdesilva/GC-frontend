@@ -1,0 +1,23 @@
+<div id="home" v-cloak>
+
+  <%- /* SLIDER SECTION */ %>
+
+    <slider :items="sliderItems"></slider>
+    <hr>
+    <section id="intro">
+      <div class="container">
+        <h2 class="pb-md-3 text-center">Welcome to GoCheeta Online Cab Service!</h2>
+        <p>Welcome to GoCheeta Taxi Service- One of the leading cab service providers in Colombo-3 at most affordable price. Get multiple car options with GoCheeta Taxi Service and enjoy your local and outstation rides. We are one of the best cab service providers in Colombo offering one way and round trip taxi services. We have gained lot of popularity in recent times with our ultimate and luxurious taxi services to our guests. GoCheeta Taxi Service offers a hassle free and comfortable services to its clients. Why wait, Book now and make your journey safe and happy with us. </p>
+      </div>
+    </section>
+    <hr>
+
+    <category :items="categoryItems"></category>
+
+    <hr>
+    <merchant :items="merchantItems"></merchant>
+    <hr>
+
+    <footer></footer> 
+</div>
+<%- /* Expose server-rendered data as window.SAILS_LOCALS :: */ exposeLocalsToBrowser() %>

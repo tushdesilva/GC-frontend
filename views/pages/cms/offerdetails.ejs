@@ -1,0 +1,116 @@
+<div id="offerdetails" v-cloak>
+
+  <div class="container-fluid title my-5 ">
+    
+    <h2 class=" ml-5 my-3">Booking Details</h2>
+    <p  class="quote ml-5">Categories/vechile-categories/<strong>Book a Cab</strong></p>
+  </div>
+  <hr>
+
+  <div class="container-fluid my-5 " >
+    <h2 class="ml-5 my-3">{{offerdetails.offer_heading}}</h2>
+    <p  class="quote ml-5">Book 30 days in advance and enjoy up to 35% off on the basis booked</p>
+  
+  <div class="row  my-5">
+    <div class="col-sm ml-5 my-5">
+     <img :src="offerdetails.image"  class="img" alt="Card image cap">
+    </div>
+
+    <div class="col-sm my-5">
+     <p class="quote ml-5 "> {{offerdetails.merchant.description}} </p>
+
+ <h3 class="my-5 ml-5 "><strong> Contact Information</strong> </h3>
+ <p class="my-3 " ><i style='font-size:27px' class='fas ml-5'>&#xf095;</i>&nbsp {{offerdetails.merchant.contact_number}}</p>
+ <p class=" quote my-3 " ><i style='font-size:27px' class='fas ml-5'>&#xf3c5;</i>&nbsp  {{offerdetails.merchant.address_line1}}.</p>
+ <p class=" quote my-3 " ><i style='font-size:27px' class='fas ml-5'>&#xf0ac;</i>&nbsp  {{offerdetails.merchant.website}}</p>
+ <a href="#" class="btn ml-5">View Location</a>
+
+ 
+ 
+    </div>
+    
+  </div>
+   
+  </div>
+
+  <div class="container-fluid my-5   ml-5">
+    <h3 class="my-3">Terms & conditions</h3>
+    <ol>
+      <li class="my-3"><p class="quote">Lorem ipum dolor sit amet, consectetur adipiscing elit.
+        Aenean euismod bibendum laoreet. Proin gravinda dolor   sit amet lacus accumsan et viverra justo commodo. Proin
+        sodales pulvinar sic tempor. Sociis natoque penatibus.</p></li>
+      <li class="my-3"> <p class="quote">Lorem ipum dolor sit amet, consectetur adipiscing elit.
+        Aenean euismod bibendum laoreet. Proin gravinda dolor   sit amet lacus accumsan et viverra justo commodo. Proin
+        sodales pulvinar sic tempor. Sociis natoque penatibus.</p></li>
+      <li class="my-3"><p class="quote">Lorem ipum dolor sit amet, consectetur adipiscing elit.
+        Aenean euismod bibendum laoreet. Proin gravinda dolor   sit amet lacus accumsan et viverra justo commodo. Proin
+        sodales pulvinar sic tempor. Sociis natoque penatibus.</p></li>
+    </ol>
+  </div>
+ <hr>
+  <div class="container-fluid my-5   ml-5">
+  <h3 class="my-3">Other Offers by W15</h3>
+</div>
+
+<section>
+  <div class="container-fluid ">
+    <div class="row ">
+      <div class="col-sm my-5  ml-5" >
+        
+  <div class="card" style="width: 20rem; height: 30rem">
+      
+        <img src="/assets/images/holiday.jpg"  class="card-img-top" alt="Card image cap">
+        <h4 class="ml-5 my-3"><strong>W15</strong></h4>
+        <i style='font-size:16px' class='fa ml-5'>&#xf3c5; kandy</i>
+      
+      <p class="card-text my-2 ml-5">Loreum ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy...</p>
+      <a href="#" class="btn ml-5">View Offer</a><br>
+
+
+      
+    
+    </div>
+      </div>
+     
+
+      <div class="col-sm my-5  ml-5" >
+        
+        <div class="card" style="width: 20rem; height: 30rem">
+            
+              <img src="/images/w155.png"  class="card-img-top" alt="Card image cap">
+              <h4 class="ml-5 my-3"><strong>W15</strong></h4>
+              <i style='font-size:16px' class='fa ml-5'>&#xf3c5; kandy</i>
+            
+            <p class="card-text my-2 ml-5">Loreum ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy...</p>
+            <a href="#" class="btn ml-5">View Offer</a><br>
+      
+      
+            
+          
+          </div>
+            </div>
+
+            <div class="col-sm my-5  ml-5" >
+        
+              <div class="card" style="width: 20rem;">
+                  
+                    <img src="/images/w155.png"  class="card-img-top" alt="Card image cap">
+                    <h4 class="ml-5 my-3"><strong>W15</strong></h4>
+                    <i style='font-size:16px' class='fa ml-5'>&#xf3c5; kandy</i>
+                  
+                  <p class="card-text my-2 ml-5">Loreum ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy...</p>
+                  <a href="#" class="btn ml-5">View Offer</a><br>
+            
+            
+                  
+                
+                </div>
+                  </div>
+      
+      </div>
+        </div>
+      </div>
+  </section>
+  
+  </div>
+<%- /* Expose server-rendered data as window.SAILS_LOCALS :: */ exposeLocalsToBrowser() %>

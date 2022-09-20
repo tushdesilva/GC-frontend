@@ -1,0 +1,36 @@
+<div id="merchantoffers" v-cloak>
+  <section id="categorylist">
+
+    
+    <div class="container-fluid">
+      <div>
+        <h2 class="py-5 px-5 mx-md-5">Categories</h2>
+      </div>
+      <hr>
+      
+      <div class="row px-1 px-md-3 px-lg-5 mx-md-5">
+        <div class="col-sm-6 col-md-4 my-5" v-for="item in categoryitems">
+          <div class="card m-4">
+            <div>
+              <h3 class="card-title pt-5 pb-2 text-center">{{item.category_name}}</h5>
+            </div>
+            <img :src="item.image" class="card-img-top" alt="...">
+            <div class="card-body">
+              <div class="container">
+                <p class="card-text">{{item.description.slice(0, 100)+'...'}}</p>
+                <div class="text-center py-3">
+                  <a :href="'/'+ item.slug +'/offers'" class="btn d-block py-3">Book Now</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </section>
+</div>
+
+
+<%- /* Expose server-rendered data as window.SAILS_LOCALS :: */ exposeLocalsToBrowser() %>
